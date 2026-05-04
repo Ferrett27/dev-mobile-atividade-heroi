@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.458"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
@@ -56,5 +56,18 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.821" />
+
+    <Button
+        android:id="@+id/botaoGithub"
+        android:layout_width="171dp"
+        android:layout_height="56dp"
+        android:text="Ir para o Github"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoRefazer"
+        app:layout_constraintVertical_bias="0.246" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
