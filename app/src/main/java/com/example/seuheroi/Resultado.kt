@@ -1,6 +1,7 @@
-package com.example.seuheroi
+package com.example.quizheroi
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -18,6 +19,7 @@ class Resultado : AppCompatActivity() {
         val textoResultado = findViewById<TextView>(R.id.textoResultado)
         val imagemResultado = findViewById<ImageView>(R.id.imagemResultado)
         val botaoRefazer = findViewById<Button>(R.id.botaoRefazer)
+        val botaoRepositorio = findViewById<Button>(R.id.botaoGithub)
         val resultado = intent.getStringExtra("resultado")
 
         if (resultado != null) {
@@ -55,5 +57,12 @@ class Resultado : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        botaoRepositorio.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://github.com/Ferrett27/dev-mobile-atividade-heroi"))
+            startActivity(intent)
+        }
+
     }
 }
